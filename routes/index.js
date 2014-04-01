@@ -1,8 +1,8 @@
 
 /*
- * GET home page.
+ * GET users listing.
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+    res.send("respond with a resource");
 };
