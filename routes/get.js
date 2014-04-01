@@ -3,6 +3,11 @@
  */
 exports.courses = function(req, res){
     var user = req.query.uID;
+    console.log(user);
+
+    //TODO: mongo query return courses for user
+
+    //TEMP STATIC COURSES
     var userCourses = '[' +
         '{' +
         '"name": "compsci101",' +
