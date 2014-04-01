@@ -1,7 +1,7 @@
 /**
  * Created by Troy on 1/04/14.
  */
-exports.submitAnswer = function(req, res){
+exports.answer = function(req, res){
     var user = req.query.uID;
     var course = req.query.c;
     var exam = req.query.e;
