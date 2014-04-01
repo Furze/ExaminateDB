@@ -5,6 +5,7 @@
 
 var express = require('express');
 var routes = require('./routes');
+var sa = require('./routes/submitAnswer.js');
 var http = require('http');
 var path = require('path');
 
@@ -28,6 +29,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/getcourses', routes.staticCourses);
+app.get('/submitAnswer', sa.submitAnswer)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
