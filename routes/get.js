@@ -55,6 +55,6 @@ exports.exams = function(req, res){
         '"answered": 4,' +
         '"questions": 50' +
         '}' +
-        ']';
+        ']'; ///fixxxxxxx
     res.send(userExams);
 }
