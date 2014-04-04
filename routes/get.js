@@ -37,22 +37,22 @@ exports.exams = function(req, res){
     //TEMP STATIC Exams
     var userExams = '[' +
         '{' +
-        '"type": "exam"' +
+        '"type": "exam",' +
         '"semester": "one",' +
         '"year": 2013,' +
-        '"answered": 9' +
+        '"answered": 9,' +
         '"questions": 50' +
         '},{' +
-        '"type": "test"' +
+        '"type": "test",' +
         '"semester": "one",' +
         '"year": 2013,' +
-        '"answered": 20' +
+        '"answered": 20,' +
         '"questions": 20' +
         '},{' +
-        '"type": "exam"' +
+        '"type": "exam",' +
         '"semester": "two",' +
         '"year": 2013,' +
-        '"answered": 4' +
+        '"answered": 4,' +
         '"questions": 50' +
         '}' +
         ']';
