@@ -36,7 +36,7 @@ exports.exams = function(req, res){
 
     //TEMP STATIC Exams
     var userExams = '[' +
-        '{' +
+        '{' +//why wont you puuuush
         '"type": "exam",' +
         '"semester": "one",' +
         '"year": 2013,' +
