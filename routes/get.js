@@ -40,10 +40,10 @@ exports.answers = function(req, res){
                             '"numSame": 80' +
                         '}';
     for(var i = 0; i < 50; i++){
-        var char = String.fromCharCode((i%5)+48);
-        var rand = Math.random()*100;
+        var char = String.fromCharCode((i%5)+65);
+        var rand = Math.floor(Math.random()*100);
         userAnswers = userAnswers.concat(',{'+
-            '"question":  1,' +
+            '"question": '+ (+i+1)+',' +
                 '"answer": "' + char + '",' +
                 '"total answered": 100,' +
                 '"numSame": ' + rand +
