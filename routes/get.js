@@ -46,7 +46,7 @@ exports.answers = function(req, res){
         userAnswers = userAnswers.concat(',{'+
             '"question": '+ (+i+1)+',' +
                 '"answer": "' + char + '",' +
-                '"total answered": 100,' +
+                '"totalAnswered": 100,' +
                 '"numSame": ' + rand +
             '}');
     }
