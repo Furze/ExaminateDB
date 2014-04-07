@@ -33,13 +33,7 @@ exports.answers = function(req, res){
     console.log(user);
 
         //TEMP STATIC answers
-    var userAnswers = '['+
-                        '{'+
-                            '"question":  1,' +
-                            '"answer": "A",' +
-                            '"total answered": 100,' +
-                            '"numSame": 80' +
-                        '}';
+    var userAnswers = '[';
     for(var i = 0; i < 50; i++){
         var char = String.fromCharCode((i%5)+65);
         var rand = Math.floor(Math.random()*100);
