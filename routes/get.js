@@ -28,10 +28,11 @@ exports.courses = function(req, res){
 exports.answers = function(req, res){
     var user = req.query.uID;
     var course = req.query.c;
+    var exam = req.query.e;
 
     console.log(user);
 
-        //TEMP STATIC Exams
+        //TEMP STATIC answers
     var userAnswers = '['+
                         '{'+
                             '"question":  1,' +
