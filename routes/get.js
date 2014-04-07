@@ -25,7 +25,33 @@ exports.courses = function(req, res){
         ']';
     res.send(userCourses);
 }
+exports.answers = function(req, res){
+    var user = req.query.uID;
+    var course = req.query.c;
 
+    console.log(user);
+
+        //TEMP STATIC Exams
+    var userAnswers = '['+
+                        '{'+
+                            '"question":  1,' +
+                            '"answer": "A",' +
+                            '"total answered": 100,' +
+                            '"numSame": 80' +
+                        '}';
+    for(var i = 0; i < 50; i++){
+        var char = String.fromCharCode((i%5)+48);
+        var rand = Math.random()*100;
+        userAnswers = userAnswers.concat(',{'+
+            '"question":  1,' +
+                '"answer": "' + char + '",' +
+                '"total answered": 100,' +
+                '"numSame": ' + rand +
+            '}');
+    }
+    userAnswers = userAnswers.concat(']');
+    res.send(userAnswers);
+}
 exports.exams = function(req, res){
     var user = req.query.uID;
     var course = req.query.c;
@@ -36,7 +62,7 @@ exports.exams = function(req, res){
 
     //TEMP STATIC Exams
     var userExams = '[' +
-        '{' +//why wont you puuuush
+        '{' +
         '"type": "exam",' +
         '"semester": "one",' +
         '"year": 2013,' +
@@ -55,6 +81,6 @@ exports.exams = function(req, res){
         '"answered": 4,' +
         '"questions": 50' +
         '}' +
-        ']'; ///fixxxxxxx
+        ']';
     res.send(userExams);
 }

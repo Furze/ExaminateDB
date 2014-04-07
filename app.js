@@ -33,6 +33,7 @@ app.get('/', routes.index);
 
 app.get('/getcourses', getRoute.courses);
 app.get('/getexams', getRoute.exams);
+app.get('/getanswers', getRoute.answers);
 
 app.get('/submitanswer', submit.answer);
 
