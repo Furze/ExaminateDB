@@ -24,7 +24,7 @@ exports.courses = function(req, res){
         '}' +
         ']';
     res.send(userCourses);
-}
+};
 exports.answers = function(req, res){
     var user = req.query.uID;
     var course = req.query.c;
@@ -51,7 +51,7 @@ exports.answers = function(req, res){
     }
     userAnswers = userAnswers.concat(']');
     res.send(userAnswers);
-}
+};
 exports.exams = function(req, res){
     var user = req.query.uID;
     var course = req.query.c;
@@ -83,4 +83,4 @@ exports.exams = function(req, res){
         '}' +
         ']';
     res.send(userExams);
-}
+};
