@@ -95,27 +95,27 @@ exports.question = function(req, res){
     var d = 5;
     var e = 1;
 
-    var qt = "[2 marks] What is the output of the following code?" +
-        'String a = new String(\\"ab\\");' +
-        ' String b = new String(\\"ab\\");' +
-        ' String c = new String(\\"a\\");' +
-        ' String d = b;' +
-        ' System.out.println(a == d);' +
-        ' System.out.println(b.equals(c));' +
-        '' +
-        '(a) true' +
-        '  false' +
-        '' +
-        '(b) false' +
-        '   true' +
-        '' +
-        '(c) false' +
-        '   false'+
-        '' +
-        '(d) true' +
-        '    true'+
-        '' +
-        '(e) None of the above';
+    var qt = "[2 marks] What is the output of the following code?~" +
+        'String a = new String(\\"ab\\");~' +
+        ' String b = new String(\\"ab\\");~' +
+        ' String c = new String(\\"a\\")~;' +
+        ' String d = b;~' +
+        ' System.out.println(a == d);~' +
+        ' System.out.println(b.equals(c));~' +
+        '~' +
+        '(a) true~' +
+        '  false~' +
+        '~' +
+        '(b) false~' +
+        '   true~' +
+        '~' +
+        '(c) false~' +
+        '   false~'+
+        '~' +
+        '(d) true~' +
+        '    true~'+
+        '~' +
+        '(e) None of the above~';
 
     //TEMP STATIC Exams
     var question = '{' +
