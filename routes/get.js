@@ -104,22 +104,23 @@ exports.question = function(req, res){
         '"exam": "'+exam+'",' +
         '"question": '+question+',' +
         '"answers": [{' +
-            '"a": [{'
-                + '"percentage": ' + a + ',' +
+            '"id": "a",' +
+                    '"percentage": ' + a + ',' +
                   '"correct": true' +
-            '}],'+
-            '"b": [{' +
+            '},'+
+            '{"id": "b",' +
                     '"percentage": ' + b +
-            '}],'+
-            '"c": [{' +
+            '},'+
+            '{"id": "c",' +
                 '"percentage": ' + c +
-            '}],'+
-            '"d": [{' +
+            '},'+
+            '{"id": "d",' +
                 '"percentage": ' + d +
-            '}],'+
-            '"e": [{' +
-                '"percentage": ' + e + '}]'+
-        '}]' +
+            '},'+
+            '{"id": "e",' +
+                '"percentage": ' + e +
+            '}'+
+        ']' +
       '}';
     res.send(question);
 };
