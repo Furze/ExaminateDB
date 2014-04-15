@@ -96,26 +96,26 @@ exports.question = function(req, res){
     var e = 1;
 
     var qt = "[2 marks] What is the output of the following code?" +
-        '\n\t String a = new String(\\"ab\\");' +
-        '\n\t String b = new String(\\"ab\\");' +
-        '\n\t String c = new String(\\"a\\");' +
-        '\n\t String d = b;' +
-        '\n\n\t System.out.println(a == d);' +
-        '\n\t System.out.println(b.equals(c));' +
-        '\n\n' +
-        '\n(a) true' +
-        '\n  false' +
-        '\n\n' +
-        '\n(b) false' +
-        '\n   true' +
-        '\n\n' +
-        '\n(c) false' +
-        '\n   false'+
-        '\n\n' +
-        '\n(d) true' +
-        '\n    true'+
-        '\n\n' +
-        '\n(e) None of the above';
+        '<br\\>String a = new String(\\"ab\\");' +
+        '<br\\> String b = new String(\\"ab\\");' +
+        '<br\\> String c = new String(\\"a\\");' +
+        '<br\\> String d = b;' +
+        '<br\\> System.out.println(a == d);' +
+        '<br\\> System.out.println(b.equals(c));' +
+        '<br\\>' +
+        '<br\\>(a) true' +
+        '<br\\>  false' +
+        '<br\\>' +
+        '<br\\>(b) false' +
+        '<br\\>   true' +
+        '<br\\>' +
+        '<br\\>(c) false' +
+        '<br\\>   false'+
+        '<br\\>' +
+        '<br\\>(d) true' +
+        '<br\\>    true'+
+        '<br\\>' +
+        '<br\\>(e) None of the above';
 
     //TEMP STATIC Exams
     var question = '{' +
