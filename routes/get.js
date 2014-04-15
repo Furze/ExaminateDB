@@ -122,6 +122,6 @@ exports.question = function(req, res){
                 '"percentage": ' + e +
             '}'+
         ']' +
-      '}';
+      '}';//test
     res.send(question);
 };
