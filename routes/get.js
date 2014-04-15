@@ -95,10 +95,31 @@ exports.question = function(req, res){
     var d = 5;
     var e = 1;
 
+    var qt = "[2 marks] What is the output of the following code?" +
+        '\n\t String a = new String("ab");' +
+        '\n\t String b = new String("ab");' +
+        '\n\t String c = new String("a");' +
+        '\n\t String d = b;' +
+        '\n\n\t System.out.println(a == d);' +
+        '\n\t System.out.println(b.equals(c));' +
+        '\n\n' +
+        '\n(a) true' +
+        '\n  false' +
+        '\n\n' +
+        '\n(b) false' +
+        '\n   true' +
+        '\n\n' +
+        '\n(c) false' +
+        '\n   false'+
+        '\n\n' +
+        '\n(d) true' +
+        '\n    true'+
+        '\n\n' +
+        '\n(e) None of the above';
 
     //TEMP STATIC Exams
     var question = '{' +
-        '"questionText": "question text goes here",' +
+        '"questionText": '+qt+',' +
         '"course": "'+ course+ '",' +
         '"exam": "'+exam+'",' +
         '"question": '+question+',' +
