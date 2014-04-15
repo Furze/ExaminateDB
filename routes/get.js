@@ -119,7 +119,7 @@ exports.question = function(req, res){
 
     //TEMP STATIC Exams
     var question = '{' +
-        '"questionText": '+qt+',' +
+        '"questionText": "'+qt+'",' +
         '"course": "'+ course+ '",' +
         '"exam": "'+exam+'",' +
         '"question": '+question+',' +
