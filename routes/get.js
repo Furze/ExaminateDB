@@ -101,9 +101,9 @@ exports.question = function(req, res){
     var question = '{' +
         '"questionText": "question text goes here",' +
         '"course": "'+ course+ '",' +
-        '"exam": "'+exam+'",' +
+        '"examName": "'+exam+'",' +
         '"question": '+question+',' +
-        '"yourAnswer": "A",'+
+        '"yanswer": "A",'+
         '"answers": [{' +
             '"id": "a",' +
                     '"percentage": ' + a + ',' +
@@ -122,6 +122,6 @@ exports.question = function(req, res){
                 '"percentage": ' + e +
             '}'+
         ']' +
-      '}';//test
+      '}';
     res.send(question);
 };
