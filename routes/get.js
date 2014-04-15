@@ -87,7 +87,6 @@ exports.question = function(req, res){
     var course = req.query.c;
     var exam = req.query.e;
     var question = req.query.q;
-    console.log(user);
 
     //TODO: mongo query return exams for course, and how many questions, how many questions the user has answered for the question
     var a = 70;
@@ -101,7 +100,7 @@ exports.question = function(req, res){
     var question = '{' +
         '"questionText": "question text goes here",' +
         '"course": "'+ course+ '",' +
-        '"examName": "'+exam+'",' +
+        '"exam": "'+exam+'",' +
         '"question": '+question+',' +
         '"yanswer": "A",'+
         '"answers": [{' +
@@ -123,5 +122,6 @@ exports.question = function(req, res){
             '}'+
         ']' +
       '}';
+    console.log(question);
     res.send(question);
 };
