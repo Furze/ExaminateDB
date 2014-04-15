@@ -34,8 +34,10 @@ app.get('/', routes.index);
 app.get('/getcourses', getRoute.courses);
 app.get('/getexams', getRoute.exams);
 app.get('/getanswers', getRoute.answers);
+app.get('/getquestion', getRoute.question);
 
 app.get('/submitanswer', submit.answer);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -81,3 +81,45 @@ exports.exams = function(req, res){
         ']';
     res.send(userExams);
 };
+
+exports.question = function(req, res){
+    var user = req.query.uID;
+    var course = req.query.c;
+    var exam = req.query.e;
+    var question = req.query.q;
+    console.log(user);
+
+    //TODO: mongo query return exams for course, and how many questions, how many questions the user has answered for the question
+    var a = 70;
+    var b = 14;
+    var c = 10;
+    var d = 5;
+    var e = 1;
+
+
+    //TEMP STATIC Exams
+    var question = '{' +
+        '"questionText": "question text goes here",' +
+        '"course": "'+ course+ '",' +
+        '"exam": "'+exam+'",' +
+        '"question": '+question+',' +
+        '"answers": [{' +
+            '"a": [{'
+                + '"percentage": ' + a + ',' +
+                  '"correct": true' +
+            '}],'+
+            '"b": [{' +
+                    '"percentage": ' + b +
+            '}],'+
+            '"c": [{' +
+                '"percentage": ' + c +
+            '}],'+
+            '"d": [{' +
+                '"percentage": ' + d +
+            '}],'+
+            '"e": [{' +
+                '"percentage": ' + e + '}]'+
+        '}]' +
+      '}';
+    res.send(question);
+};
