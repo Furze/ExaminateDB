@@ -103,6 +103,7 @@ exports.question = function(req, res){
         '"course": "'+ course+ '",' +
         '"exam": "'+exam+'",' +
         '"question": '+question+',' +
+        '"yourAnswer": "A",'+
         '"answers": [{' +
             '"id": "a",' +
                     '"percentage": ' + a + ',' +
