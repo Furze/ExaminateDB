@@ -11,14 +11,17 @@ exports.courses = function(req, res){
     var userCourses = '[' +
         '{' +
         '"name": "compsci101",' +
+        '"desc": "Principles of Programming"'+
         '"exams": 3,' +
         '"complete": 1' +
         '},{' +
         '"name": "compsci111",' +
+        '"desc": "An Introduction to Practical Computing"'+
         '"exams": 0,' +
         '"complete": 0' +
         '},{' +
         '"name": "compsci111g",' +
+        '"desc": "An Introduction to Practical Computing"'+
         '"exams": 0,' +
         '"complete": 0' +
         '}' +
