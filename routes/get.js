@@ -37,6 +37,12 @@ exports.answers = function(req, res){
     for(var i = 0; i < 50; i++){ //update azure plox
         var char = String.fromCharCode((i%5)+65);
         var rand = Math.floor(Math.random()*100);
+        if (rand <= 50){
+            rand = 70 + Math.floor(Math.random()*30);
+        } else {
+            rand = Math.floor(Math.random()*30)
+        }
+
         if(i!==0)
             userAnswers = userAnswers.concat(',');
         userAnswers = userAnswers.concat('{'+
@@ -95,7 +101,7 @@ exports.question = function(req, res){
     var d = 5;
     var e = 1;
 
-    var qt = 'http://i.imgur.com/XfSosVX.png';
+    var qt = 'h```ttp://i.imgur.com/XfSosVX.png';
 
     //TEMP STATIC Exams
     var question = '{' +
