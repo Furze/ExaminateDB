@@ -40,7 +40,7 @@ exports.answers = function(req, res){
         if (rand <= 50){
             rand = 70 + Math.floor(Math.random()*30);
         } else {
-            rand = Math.floor(Math.random()*30)
+            rand = Math.floor(Math.random()*20)
         }
 
         if(i!==0)
