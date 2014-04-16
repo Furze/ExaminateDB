@@ -34,7 +34,7 @@ exports.answers = function(req, res){
 
         //TEMP STATIC answers
     var userAnswers = '[';
-    for(var i = 0; i < 50; i++){ //update azure plox
+    for(var i = 0; i < 14; i++){
         var char = String.fromCharCode((i%5)+65);
         var rand = Math.floor(Math.random()*100);
         if (rand <= 50){
