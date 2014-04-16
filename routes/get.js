@@ -72,11 +72,11 @@ exports.exams = function(req, res){
         '"answered": 9,' +
         '"questions": 50' +
         '},{' +
-        '"type": "test",' +
-        '"semester": "one",' +
-        '"year": 2013,' +
-        '"answered": 20,' +
-        '"questions": 20' +
+        '"type": "exam",' +
+        '"semester": "two",' +
+        '"year": 2012,' +
+        '"answered": 14,' +
+        '"questions": 14' +
         '},{' +
         '"type": "exam",' +
         '"semester": "two",' +
@@ -100,12 +100,8 @@ exports.question = function(req, res){
     var c = 10;
     var d = 5;
     var e = 1;
-
-    var qt = 'h```ttp://i.imgur.com/XfSosVX.png';
-
     //TEMP STATIC Exams
     var question = '{' +
-        '"questionText": "'+qt+'",' +
         '"course": "'+ course+ '",' +
         '"exam": "'+exam+'",' +
         '"question": '+question+',' +
