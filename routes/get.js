@@ -98,8 +98,8 @@ exports.question = function(req, res){
     var question = req.query.q;
 
     //TODO: mongo query return exams for course, and how many questions, how many questions the user has answered for the question
-    var a = 68;
-    var b = 10;
+    var a = 66;
+    var b = 12;
     var c = 10;
     var d = 7;
     var e = 5;
